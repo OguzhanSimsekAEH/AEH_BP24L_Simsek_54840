@@ -5,7 +5,7 @@ public class myThirdApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // ------------------------- PART 1: Days to weeks & days -------------------------
+
         System.out.println("=== Part 1: Convert days to weeks/days ===");
         int days;
         do {
@@ -22,7 +22,7 @@ public class myThirdApp {
 
         System.out.println("Days conversion finished.\n");
 
-        // ------------------------- PART 2: Celsius to Fahrenheit & Kelvin -------------------------
+
         System.out.println("=== Part 2: Convert Celsius to Fahrenheit/Kelvin ===");
         double celsius;
         do {
@@ -32,7 +32,7 @@ public class myThirdApp {
             if (celsius != -1) {
                 double fahrenheit = 1.8 * celsius + 32.0;
                 double kelvin     = celsius + 273.16;
-                // Print with two decimal places
+
                 System.out.printf("Celsius: %.2f, Fahrenheit: %.2f, Kelvin: %.2f%n",
                         celsius, fahrenheit, kelvin);
             }
