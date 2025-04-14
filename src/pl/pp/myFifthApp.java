@@ -58,7 +58,7 @@ public class myFifthApp {
     }
 
     /*
-    // If you need to keep any of the old methods for reference, just leave them commented or remove them:
+    
     private static void calculateScore_noArguments() {
         boolean gameOver = true;
         int score = 150;
