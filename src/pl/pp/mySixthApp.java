@@ -99,14 +99,12 @@ public class myFifthApp {
 
         System.out.println("Calculating factorial of " + N + " using iterative and recursive methods.");
 
-        // Iterative calculation and timing
         long startIter = System.nanoTime();
         long resultIter = factorialIterative(N);
         long endIter = System.nanoTime();
         long timeIter = endIter - startIter;
         System.out.println("Iterative: " + resultIter + " (time = " + timeIter + " ns)");
 
-        // Recursive calculation and timing
         long startRec = System.nanoTime();
         long resultRec = factorialRecursive(N);
         long endRec = System.nanoTime();
