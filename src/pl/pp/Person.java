@@ -1,56 +1,46 @@
 package pl.pp;
 
 public class Person {
+    // fields (attributes) of the class defining the object "Person" (its parameters/characteristics)
+    public String forename; // field storing the feature forename
+    public String surname; // field storing the feature surname
+    public int age; // field storing the feature age
 
-    public String forename;
-    public String surname;
-    public int age;
-    public String address;
-    public int yearOfBirth;
-
-
+    /**
+     * Default constructor - an element initializing object fields during its creation
+     * (if we do not provide any parameters ourselves)
+     */
     public Person() {
-        this.forename = "";
-        this.surname = "";
-        this.age = 0;
-        this.address = "";
-        this.yearOfBirth = 0;
+
     }
 
-
-    public Person(String initForename, String initSurname, int initAge, String initAddress, int initYearOfBirth) {
-        this.forename = initForename;
-        this.surname = initSurname;
-        this.age = initAge;
-        this.address = initAddress;
-        this.yearOfBirth = initYearOfBirth;
+    /**
+     * Constructor with three parameters, which we can provide at its creation
+     */
+    public Person(String initForename, String initSurname, int initAge) {
+        forename = initForename;
+        surname = initSurname;
+        age = initAge;
     }
 
-
-    public void hiToAll() {
-        System.out.println("Name: " + forename + " " + surname
-                + ", Age: " + age
-                + ", Address: " + address
-                + ", Year of Birth: " + yearOfBirth);
+    // class methods defining actions possible to be performed by the object
+    public void hiToAll(){
+        System.out.println("My name is " + forename + " " + surname + ". " + "I am " + age + " years old.");
     }
 
-
-    public int growOld(int years) {
-        this.age += years;
-        return this.age;
+    // example method growOld, which increases the age of the object by one each time it is called
+    public int growOld(){
+        age = age + 1;
+        return age;
     }
 
-
-    public void beYounger() {
-        this.age -= 1;
-    }
-
-
-    public String getName() {
+    // example method getName returning the value of forename of the object
+    public String getName(){
         return forename;
     }
 
-    public void setName(String nameToSet) {
-        this.forename = nameToSet;
+    // example method setName setting the value of forename of the object
+    public void setName(String nameToSet){
+        forename = nameToSet;
     }
 }
