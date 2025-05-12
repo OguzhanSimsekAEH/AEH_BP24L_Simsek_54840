@@ -1,4 +1,4 @@
-package pl.pp;
+/*package pl.pp;
 
 public class Circle {
 
@@ -33,3 +33,5 @@ public class Circle {
         System.out.println("Circle with radius = " + radius + ", area = " + area() + " and circumference = " + circumference());
     }
 }
+
+ */

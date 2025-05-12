@@ -1,4 +1,4 @@
-package pl.pp;
+/*package pl.pp;
 
 public class Person {
     // fields (attributes) of the class defining the object "Person" (its parameters/characteristics)
@@ -10,14 +10,14 @@ public class Person {
      * Default constructor - an element initializing object fields during its creation
      * (if we do not provide any parameters ourselves)
      */
-    public Person() {
+    /*public Person() {
 
     }
 
     /**
      * Constructor with three parameters, which we can provide at its creation
      */
-    public Person(String initForename, String initSurname, int initAge) {
+    /*public Person(String initForename, String initSurname, int initAge) {
         forename = initForename;
         surname = initSurname;
         age = initAge;
@@ -44,3 +44,5 @@ public class Person {
         forename = nameToSet;
     }
 }
+
+     */
